@@ -4,9 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/eed4d332b4.js" crossorigin="anonymous"></script>
+    <title>Ofertas Santa Isabel</title>
 </head>
 <body>
+
+    <nav>
+        <section class="nav">
+        <div class="logo-menu">
+            <i class="fa-solid fa-bars"></i>
+            <img src="assets\img\logo-mobile.png">
+        </div>
+        <section class="search2 hide">
+            <input type="text" placeholder="¿Qué estás buscando?" id="input-search">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </section>
+        <div class="buttons-menu">
+            <button class="ingresar-menu button">
+                <i class="fa-regular fa-user"></i>
+                <p>Ingresar</p>
+            </button>
+            <button id="boton-carrito" class="button">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p id="cantidad-carrito">0</p>
+            </button>
+
+            <div id="offcanvas-carrito" class="offcanvas">
+                <div class="offcanvas-header">
+                  <h2>Carrito de Compras</h2>
+                  <button id="cerrar-carrito" class="cerrar-carrito">X</button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul id="lista-carrito" class="lista-carrito">
+                  </ul>
+                  <p id="total-carrito" class="total-carrito"></p>
+                  <button id="finalizar-compra" class="finalizar-compra">Finalizar Compra</button>
+                </div>
+            </div>
+        </div>
+        </section>
+
+
+
+        <section class="search">
+            <input type="text" placeholder="¿Qué estás buscando?" id="input-search">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </section>
+    </nav>
+
+    <div class="oferta">
+        <div class="titulo-oferta">
+            <h1>Ofertas</h1>
+            <span>6 productos</span>
+        </div>
+
+    </div>
     <div id="productos-container"></div>
 
     <script type="module" src="assets\js\script.js"></script>
